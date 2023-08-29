@@ -346,9 +346,11 @@ footer{
     align-items: center;
     min-height: 10vh;
     flex-wrap: wrap;
+    color: black;
 }
 footer h5{
     flex: 1 1 40rem;
+    color: black;
 }
 
 footer ul{
@@ -360,6 +362,14 @@ footer ul{
     height: 10%;
 
 }
+footer img{
+    width: 8vh;
+    display: flex;
+    list-style-position: unset;
+    padding: 2rem;
+    flex-wrap: wrap-reverse;
+}
+
 .footerimg{
     width: 10%;
 }
