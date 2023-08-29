@@ -117,7 +117,7 @@ nav ul{
 
 .hero{
     min-height: 90vh;
-    background: linear-gradient(rgb(0, 0, 0, 0.6), transparent),url('/TowingWebsite/img/2nd.jpg');
+    background: linear-gradient(rgb(0, 0, 0, 0.6), transparent),url('./img/2nd.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -137,7 +137,7 @@ nav ul{
 
 #aboutus{
     min-height: 100vh;
-    background: linear-gradient(rgb(0, 0, 0, 0.6), transparent),url('/TowingWebsite/img/bg.jpg');
+    background: linear-gradient(rgb(0, 0, 0, 0.6), transparent),url('./img/bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
