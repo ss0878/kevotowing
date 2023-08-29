@@ -1,0 +1,405 @@
+/*Global Style */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+h1{
+    font-size: 2.6rem;
+}
+
+li,
+button,
+label,
+input,
+p {
+    font-size: 2.6rem;
+}
+
+h2{
+    font-size: 4.8rem;
+}
+
+h3{
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+h4,
+h5 {
+    font-size: 2.8rem;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+button{
+    padding: 2rem 6rem;
+    background:rgb(58, 110, 160);
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: background 0.5s ease-in-out 1s;
+    animation: buttonAnimation 2s infinite alternate 1s;
+    border-radius: 4rem;
+}
+
+button:hover{
+    background-color: #27394c;
+    font-size: 2rem;
+}
+
+@keyframes buttonAnimation {
+    0%{
+        background-color: rgb(6, 78, 78);
+    }
+    25%{
+        background-color: #27394c;
+    }
+    100%{
+        background-color: rgb(224, 72, 110);
+    }
+}
+
+
+.scroll-container {
+    scroll-snap-type: y mandatory;
+}
+
+.item{
+    scroll-snap-align: center;
+}
+
+
+
+/*Nav Section with Hero */
+
+.main-head{
+    background: rgb(10, 10, 10);
+    color: white;
+}
+
+nav{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+    min-height: 10vh;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul{
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+#Logo{
+    flex: 2 1 40rem;
+    font-family: "Pattaya", sans-serif;
+    font-weight: normal;
+    font-size: 6rem;
+}
+
+.hero{
+    min-height: 90vh;
+    background: linear-gradient(rgb(0, 0, 0, 0.6), transparent),url('/TowingWebsite/img/2nd.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h3{
+    padding: 3rem;
+}
+
+
+/* About US Section */
+
+#aboutus{
+    min-height: 100vh;
+    background: linear-gradient(rgb(0, 0, 0, 0.6), transparent),url('/TowingWebsite/img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    color: white;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.aboutus-head{
+    width: 90%;
+    margin: auto;
+    z-index: 0;
+}
+
+.aboutus-head h2{
+    padding: 1rem 0rem;
+    text-decoration: underline;
+    text-decoration-thickness: 0.5rem;
+}
+
+.aboutus-head h3{
+    padding: 1rem 0rem;
+    
+}
+
+.smoke{
+    position: absolute;
+    top: -20%;
+    right: 0%;
+}
+.moving-smoke-1{
+    z-index: -2;
+    opacity: 0.5;
+    animation: smokeAnimation 9s infinite alternate ease-in-out;
+    
+}
+.moving-smoke-2{
+    top: 0%;
+    z-index: -1;
+    opacity: 0.5;
+    animation: smokeAnimation2 6s infinite alternate ease-in-out;
+}
+
+@keyframes smokeAnimation {
+    from{
+        transform: translate(10%, 10%);
+    }
+    to{
+        transform: translate(0%, 0%);
+    }
+}
+
+@keyframes smokeAnimation2 {
+    from{
+        transform: translate(0%, 0%);
+    }
+    to{
+        transform: translate(10%, -10%);
+    }
+}
+
+
+/* Contact Section */
+
+#contact{
+    min-height: 100vh;
+}
+
+.contact {
+    position: relative;
+    display: inline-block;
+    animation: glitch 1s infinite;
+}
+
+@keyframes contact {
+    0% {
+        transform: translate(0);
+    }
+    25% {
+        transform: translate(-5px, 5px);
+    }
+    50% {
+        transform: translate(5px, -5px);
+    }
+    75% {
+        transform: translate(-5px, 5px);
+    }
+    100%{
+        transform: translate(0);
+    }
+
+}
+
+/* Service Section */
+
+.service-head{
+    background: #27394c;
+    padding: 3rem;
+    min-height: 30vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.service h3{
+    padding: 1rem;
+}
+
+.cards{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    min-height: 70vh;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.card{
+    text-align: center;
+    padding: 0%;
+    flex: 1 1 25rem;
+    min-height: 40vh;
+    margin: 2rem 5rem;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.712), 0px 20px 20px rgba(0, 0, 0, 0.1);
+    
+}
+
+.card img{
+    height: 100px;
+    margin: 2rem;
+}
+
+.card h4,p {
+    padding: 3rem;
+}
+
+
+.card-icon{
+    background: #27394c;
+}
+
+
+#contact{
+    min-height: 100vh;
+    background: linear-gradient(rgb(0, 0, 0, 0.6), transparent),
+    url('./img/road.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+
+.form-wrapper{
+    background: rgba(0, 0, 0, 0.1);
+    width: 60%;
+    color: white;
+    border-radius: 20px;
+}
+
+.form-head{
+    text-align: center;
+    padding: 4rem;
+}
+
+
+.name-form,.email-form,.message-form{
+    padding: 3rem;
+    text-align: center;
+}
+
+.form-wrapper label{
+    margin: 0rem 3rem;
+}
+.form-wrapper button{
+    width: 100%;
+    padding: 2rem;
+    margin-top: 8rem;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.form-wrapper input{
+    padding: 1rem 3rem;
+}
+
+
+
+footer{
+    color: white;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.footer-wrapper{
+    display: flex;
+    padding: 2rem;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    min-height: 10vh;
+    flex-wrap: wrap;
+}
+footer h5{
+    flex: 1 1 40rem;
+}
+
+footer ul{
+    display: flex;
+    list-style: none;
+    flex: 1 1 40rem;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+
+}
+.footerimg{
+    width: 10%;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 932px){
+    html{
+        font-size: 45%;
+    }
+    nav{
+        text-align: center;
+    }
+    #logo{
+        padding: 2rem;
+    }
+
+    .smoke{
+        height: 40rem;
+    }
+    .moving-smoke-1{
+        z-index: -1;
+    }.moving-smoke-1{
+        z-index: -2;
+    }
+
+    .aboutus-head h3{
+        background: rgba(0, 0, 0, 0.712);
+        align-content: center;
+    }
+.form-wrapper{
+    width: 100%;
+}
+footer{
+    text-align: center;
+}
+footer h5{
+    padding-bottom: 3rem;
+}
+
+
+
+}
